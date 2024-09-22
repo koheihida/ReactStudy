@@ -5,7 +5,12 @@ const rootEllement = document.getElementById("root");
 const root = createRoot(rootEllement);
 
 const App = () => {
-  return <h1>Hello World</h1>
+  return (
+    <>
+    <h1>Hello World</h1>
+    <p>Digital Nature</p>
+    </>
+  ); 
 }
 
 root.render(
