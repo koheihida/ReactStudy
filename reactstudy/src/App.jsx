@@ -3,6 +3,7 @@ export const App = () => {
     <>
     <h1>Hello World</h1>
     <p>Digital Nature</p>
+    <button onClick={() => alert("動作確認")}>ボタン</button>
     </>
   ); 
 }
