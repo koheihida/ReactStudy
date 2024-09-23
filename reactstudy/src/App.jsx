@@ -9,7 +9,9 @@ export const App = () => {
   return (
     <>
     <h1 style={{color: "red" }}>Hello World</h1>
-    <ColorfulMessage />
+    <p style={{fontSize: "50px"}}>Digital Nature</p>
+      <ColorfulMessage color = "yellow" message = "ナラッキー" />
+      <ColorfulMessage color = "green" message = "O'Reilly" />
     <button onClick={onClickButton}>ボタン</button>
     </>
   ); 

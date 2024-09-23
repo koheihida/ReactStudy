@@ -1,10 +1,13 @@
-export const ColorfulMessage = () => {
-    // pタグ用のCSS
-    const pStyle = {
-      fontSize : "50px",
-      color: "blue"
+export const ColorfulMessage = (props) => {
+    const {color, message} = props;
+
+    const testStyle = {
+      color,
+      message: message
     }
     return (
-      <p style={pStyle}>Digital Nature</p>
+      <>
+        <p style={testStyle}>{testStyle.message}</p>
+      </>
     )
 }
