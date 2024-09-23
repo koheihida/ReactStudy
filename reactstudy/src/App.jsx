@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { ColorfulMessage } from "./components/ColorfulMessage";
 
 export const App = () => {
-  // ボタン押下時の関数
+  const [num, setNum] = useState(100);  // ボタン押下時の関数
   const onClickButton = () => {
     alert("動作確認")
   }
@@ -13,6 +14,7 @@ export const App = () => {
       <ColorfulMessage color = "yellow" message = "ナラッキー" />
       <ColorfulMessage color = "green" message = "O'Reilly" />
     <button onClick={onClickButton}>ボタン</button>
+    <p>{num}</p>
     </>
   ); 
 }
