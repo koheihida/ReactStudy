@@ -7,8 +7,12 @@ export const App = () => {
   // ボタン押下時の関数
   const onClickButton = () => {
     setNum((prev) => prev + 1);
-    setNum((prev) => prev + 3);
+  }
 
+  if (num % 3 == 0) {
+    isShowFace || setIsShowFace(true);
+  } else {
+    isShowFace && setIsShowFace(false);
   }
 
   const onClickToggle = () => {
@@ -22,7 +26,7 @@ export const App = () => {
       <ColorfulMessage color = "green" message = "O'Reilly" />
     <button onClick={onClickButton}>カウントアップ</button>
     <p>{num}</p>
-    <button onClick={onClickToggle}>む</button>
+    <button onClick={onClickToggle}>on/off</button>
     {isShowFace &&  <p>( ◠‿◠ )</p>}
 
     </>
